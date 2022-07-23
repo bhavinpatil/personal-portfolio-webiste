@@ -1,0 +1,54 @@
+.about__container{
+    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: 38% 50%;
+    gap: 15%;
+}
+
+.about__me-image{
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.about__content p{
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+    font-size: larger;
+    text-align: justify;
+}
+
+/*======================MEDIA QUERIES(MEDIUM DEVICES)====================*/
+@media screen and (max-width: 1024px) {
+    .about__container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about__me{
+        width: 70%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about__content{
+        text-align: center;
+    }
+    .about__content p{
+        margin: 1 rem 0 1.5rem;
+    }
+}
+
+/*======================MEDIA QUERIES(SMALL DEVICES)====================*/
+@media screen and (max-width: 600px){
+    .about__me{
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .about__content{
+        text-align: center;
+    }
+
+    .about__content p{
+        margin: 1.5rem 2rem;
+    }
+}
